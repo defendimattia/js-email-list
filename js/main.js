@@ -9,7 +9,7 @@ const source = "https://flynn.boolean.careers/exercises/api/random/mail"
 for (i = 0; i < 10; i++) {
     axios.get(source)
         .then(response => {
-            genEmails.push(response.data.response)
+            ulElement.innerHTML += `<li>${response.data.response}</li>`
         })
         .catch(error => {
             console.error(error)
@@ -17,4 +17,3 @@ for (i = 0; i < 10; i++) {
 }
 
 
-genEmails.forEach((email) => ulElement.innerHTML += `<li>${email}</li>`)
