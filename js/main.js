@@ -1,6 +1,5 @@
 
 const ulElement = document.querySelector("ul")
-const genEmails = []
 
 
 const source = "https://flynn.boolean.careers/exercises/api/random/mail"
