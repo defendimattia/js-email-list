@@ -1,4 +1,5 @@
 
+const ulElement = document.querySelector("ul")
 const genEmails = []
 
 
@@ -15,3 +16,5 @@ for (i = 0; i < 10; i++) {
         })
 }
 
+
+genEmails.forEach((email) => ulElement.innerHTML += `<li>${email}</li>`)
